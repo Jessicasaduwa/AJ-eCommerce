@@ -47,7 +47,7 @@ const Login = () => {
     if (token) {
       navigate("/");
     }
-  }, [token]);
+  }, [token, setToken, navigate]);
   return (
     <form
       onSubmit={onSubmitHandler}
